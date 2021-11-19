@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ARTS</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/_bootstrap.scss">
+    <link rel="stylesheet" href="css/_variable.scss">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/function.js"></script>
+    <style>
+      h4{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav style="font-family: Arial, Helvetica, sans-serif;" class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a style="font-size: 25px;" class="navbar-brand" href="">Arts</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="showExercise()">Exercises</a>
+          </li>
+          <li class="nav-item disabled">
+            <a class="nav-link" onClick="alert('This function was disabled.')">Progress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="showHelp()">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="showAboutUs()">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="showFindMe()">Find Me  </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="indexHome">
+      <div class="col-md-3" style="position: absolute; margin-top: 3%;">
+        <div class="list-group">
+          <a href="" class="list-group-item list-group-item-action active">
+            Lessons
+          </a>
+          <a onClick="showMusic()" class="list-group-item list-group-item-action">
+            Music
+            <span class="badge badge-primary badge-pill">10</span>
+          </a>
+          <a onClick="showPhotography()" class="list-group-item list-group-item-action">
+            Photography
+            <span class="badge badge-primary badge-pill">5</span>
+          </a>
+          <a onClick="showArt()" class="list-group-item list-group-item-action">
+            Art
+            <span class="badge badge-primary badge-pill">4</span>
+          </a>
+          <a onClick="showPerformingArts()" class="list-group-item list-group-item-action">
+            Performing Arts
+            <span class="badge badge-primary badge-pill">3</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="showHome" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header">Home</div>
+        <div class="card-body">
+          <h4 class="card-title">Introduction</h4>
+          <div class="row">
+            <div class="col-md-4">
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">“Every child is an artist. The problem is how to remain an artist once we grow up.”</p>
+                <footer class="blockquote-footer">Plablo Picasso</footer>
+              </blockquote>
+            </div>
+            <div class="col-md-4">
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">“We don't make mistakes, just happy little accidents”</p>
+                <footer class="blockquote-footer">Bob Ross</footer>
+              </blockquote>
+            </div>
+            <div class="col-md-4">
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">“Art enables us to find ourselves and lose ourselves at the same time.”</p>
+                <footer class="blockquote-footer">Thomas Merton</footer>
+              </blockquote>
+            </div>
+            These are famous quotes by famous artists, maybe someday you can be like them too.
+          </div>
+          <p class="card-text">
+
+          </p>
+        </div>
+      </div>
+
+      <div id="showMusic" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Music</h4></div>
+        <div class="card-body"><br />
+          <img style="position: relative; margin-top: -7.5%;" src="images/art.png" width="350" height="350" />
+          <button onClick="showMusicTopic(1)" style="position: absolute; right: 25%; top: 35%;" class="btn btn-outline-success">Get started</button>
+          <p class="card-text" style="text-indent: 5%;">
+          The Concise Oxford Dictionary defines music as "the art of combining vocal or instrumental sounds (or both) to produce beauty of form, harmony, and expression of emotion" (Concise Oxford Dictionary 1992). However, the music genres known as noise music and musique concrète, for instance, challenge these ideas about what constitutes music's essential attributes by using sounds not widely considered as musical, like randomly produced electronic distortion, feedback, static, cacophony, and compositional processes using indeterminacy (Priest 2013, 132; Hagerty 2007).  </p>
+        </div>
+      </div>
+
+      <div id="musicTopic1" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">FOLK MUSIC</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            Music that originates in traditional popular culture or that is written in such a style. Folk music is typically of unknown authorship and is transmitted orally from generation to generation.
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item disabled">
+              <a class="page-link">&laquo;</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showMusicTopic(1)">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(2)">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(5)">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(6)">6</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(7)">7</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(8)">8</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(9)">9</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(10)">10</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(2)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="musicTopic2" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">WORLD MUSIC</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            Is a musical category encompassing many different styles of music from around the globe, which includes many genres including some forms of Western music represented by folk music, Jazz, as well as selected forms of ethnic music, indigenous music, neotraditional music, and music where more than one cultural tradition, such as ethnic music and Western popular music, intermingle.</p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(1)">&laquo;</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(1)">1</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showMusicTopic(2)">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(5)">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(6)">6</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(7)">7</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(8)">8</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(9)">9</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(10)">10</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(3)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="musicTopic3" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">CHILDREN'S MUSIC</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            Children's music or kids' music is music composed and performed for children. In European-influenced contexts this means music, usually songs, written specifically for a juvenile audience. The composers are usually adults.
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(2)">&laquo;</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(2)">2</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showMusicTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(5)">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(6)">6</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(7)">7</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(8)">8</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(9)">9</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(10)">10</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(4)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="musicTopic4" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">DANCE MUSIC</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+             Is music composed specifically to facilitate or accompany dancing. It can be either a whole musical piece or part of a larger musical arrangement.
+           </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(3)">&laquo;</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(3)">3</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showMusicTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(5)">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(6)">6</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(7)">7</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(8)">8</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(9)">9</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(10)">10</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(5)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="musicTopic5" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">RELIGIOUS MUSIC</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+             Is music composed specifically to facilitate or accompany dancing. It can be either a whole musical piece or part of a larger musical arrangement.
+           </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(4)">&laquo;</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(4)">4</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showMusicTopic(5)">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(6)">6</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(7)">7</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(8)">8</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(9)">9</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(10)">10</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(6)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="musicTopic6" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">PROGRESSIVE MUSIC</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+             Is a broad genre of rock music that developed in the United Kingdom and United States throughout the mid to late 1960s. Initially termed "progressive pop", the style was an outgrowth of psychedelic bands who abandoned standard pop traditions in favour of instrumentation and compositional techniques more frequently associated with jazz, folk, or classical music.
+           </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(5)">&laquo;</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(5)">5</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showMusicTopic(6)">6</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(7)">7</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(8)">8</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(9)">9</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(10)">10</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(7)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="musicTopic7" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">ART MUSIC</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+             Is music that implies advanced structural and theoretical considerations or a written musical tradition. The terms "serious" or "cultivated" are frequently used in relation to music in order to present a contrast with ordinary, everyday music.
+           </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(6)">&laquo;</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(5)">5</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(6)">6</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showMusicTopic(7)">7</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(8)">8</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(9)">9</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(10)">10</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(8)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="musicTopic8" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">PSYCHEDELIC MUSIC</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+             Is a wide range of popular music styles and genres influenced by 1960s psychedelia, a subculture of people who used psychedelic drugs such as LSD, psilocybin mushrooms, mescaline and DMT to experience visual and auditory hallucinations, synesthesia and altered states of consciousness.
+           </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(7)">&laquo;</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(5)">5</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(6)">6</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(7)">7</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showMusicTopic(8)">8</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(9)">9</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(10)">10</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(9)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="musicTopic9" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">CONTEMPORARY CLASSICAl MUSIC</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+             Contemporary classical music can be understood as belonging to the period that started in the mid-1970s to early 1990s, which includes modernist, postmodern, neoromantic, and pluralist music. However, the term may also be employed in a broader sense to refer to all post-1945 musical forms.
+            </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(8)">&laquo;</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(5)">5</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(6)">6</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(7)">7</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(8)">8</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showMusicTopic(9)">9</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(10)">10</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(10)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="musicTopic10" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">FILK MUSIC</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+              Is a musical culture, genre, and community tied to science fiction/fantasy/horror fandom and a type of fan labor. The genre has been active since the early 1950s, and played primarily since the mid-1970s.
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(9)">&laquo;</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showMusicTopic(5)">5</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(6)">6</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(7)">7</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(8)">8</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showMusicTopic(9)">9</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showMusicTopic(10)">10</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="showPhotography" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Photography</h4></div>
+        <div class="card-body"><br />
+          <img style="position: relative; margin-top: -7.5%;" src="images/cam.png" width="350" height="350" />
+          <button onClick="showPhotoTopic(1)" style="position: absolute; right: 25%; top: 35%;" class="btn btn-outline-success">Get started</button>
+          <p class="card-text" style="text-indent: 5%;">
+          Photography is the art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science, manufacturing (e.g., photolithography), and business, as well as its more direct uses for art, film and video production, recreational purposes, hobby, and mass communication.</p>
+        </div>
+      </div>
+
+      <div id="photoTopic1" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Build a Resource Library for your Camera</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+              Getting Started In early days of photography, the process of taking images was considered a significant advancement of science. Early film cameras were rather primitive and relatively simple to use (if you knew how to operate them). Digital cameras have long since replaced film and the technology in today's DSLR's
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item disabled">
+              <a class="page-link" onClick="showPhotoTopic(9)">&laquo;</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showPhotoTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showPhotoTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showPhotoTopic(5)">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showPhotoTopic(2)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="photoTopic2" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Light and The Photographer</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            Welcome to Photography Course #1 When it comes to light and photography, its helpful to understand some of the basic physics behind light and lenses. The word "photography" was created from the Greek roots (phōtos, phōs, and graphé) which together means "drawing with light". It is important to remember that light
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(1)">&laquo;</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(1)">1</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showPhotoTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showPhotoTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showPhotoTopic(5)">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showPhotoTopic(3)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="photoTopic3" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Understanding the Exposure Triangle</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            Exposure Triangle If you want to take great photos, you need to understand exposure and the Exposure Triangle is the foundation of photography. If you're new to photography, you can get away with taking respectable pictures right out of the box using automatic settings. However, if you want to produce
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(2)">&laquo;</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(2)">2</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showPhotoTopic(3)">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showPhotoTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showPhotoTopic(5)">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showPhotoTopic(4)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="photoTopic4" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Understanding ISO Sensitivity</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            ISO In our course on Understanding the Exposure Triangle, we spoke of the importance of light in photography and about controlling how much light gets exposed to the digital sensor in your camera to produce an image. You learned how ISO, along with the aperture setting and the shutter speed
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(3)">&laquo;</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(3)">3</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showPhotoTopic(4)">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showPhotoTopic(5)">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" onClick="showPhotoTopic(5)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="photoTopic5" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Introduction to Shutter Speed</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            What is Shutter Speed? Shutter speed is the amount of time the shutter is open and a measurement of time. It's basically the timer for light coming into the camera. Shutter speed is the length of time the shutter curtain is open and light is exposed to the sensor. Shutter
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(4)">&laquo;</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(3)">3</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPhotoTopic(4)">4</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showPhotoTopic(5)">5</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" onClick="showPhotoTopic(5)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="showArt" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Art</h4></div>
+        <div class="card-body"><br />
+          <img style="position: relative; margin-top: -7.5%;" src="images/artts.png" width="350" height="350" />
+          <button onClick="showArtTopic(1)" style="position: absolute; right: 25%; top: 35%;" class="btn btn-outline-success">Get started</button>
+          <p class="card-text" style="text-indent: 5%;">
+          Art is a diverse range of human activities in creating visual, auditory or performing artifacts (artworks), expressing the author's imaginative, conceptual ideas, or technical skill, intended to be appreciated for their beauty or emotional power. In their most general form these activities include the production of works of art, the criticism of art, the study of the history of art, and the aesthetic dissemination of art.</p>
+        </div>
+      </div>
+
+      <div id="artTopic1" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Graphic Design Lesson Plan</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            How much do your students know about graphic design? A text lesson provides key information and an activity gives them a chance to demonstrate what they've learned. Options for ongoing instruction are provided in the form of related lessons and extensions.
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item disabled">
+              <a class="page-link" onClick="showArtTopic(4)">&laquo;</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showArtTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(3)">3</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(4)">4</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(2)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="artTopic2" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Definition & Explanation</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            Could you imagine a world without pictures to help you visualize products you are purchasing? A good company utilizes pictures and text to help capture the attention of its audience. Graphic design is a combination of visual images and text to communicate to an audience. In other words, graphic design communicates using a visual description, by presenting images, information, or text that distinguishes a brand from its competitors. Graphic design is used on materials including packaging, brochures, and websites
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(1)">&laquo;</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(1)">1</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showArtTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(3)">3</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(4)">4</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(3)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="artTopic3" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Art Appreciation</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            Even if your students are fashionistas, this lesson plan will give a deeper understanding of the craft. Students will read a text lesson, learn new vocabulary and categories of fashion design, and create an original design.
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(2)">&laquo;</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(2)">2</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showArtTopic(3)">3</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(4)">4</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(4)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="artTopic4" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Costume Design Lesson</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            Teach students about the world of costume design with this lesson plan. Students will read a text lesson on costume design history and techniques, observe and analyze costumes, then create their own.
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(3)">&laquo;</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showArtTopic(3)">3</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showArtTopic(4)">4</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" onClick="showArtTopic(4)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="showPerformingArts" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Performing Arts</h4></div>
+        <div class="card-body"><br />
+          <img style="position: relative; margin-top: -7.5%;" src="images/th.png" width="350" height="350" />
+          <button onClick="showPerformTopic(1)" style="position: absolute; right: 25%; top: 35%;" class="btn btn-outline-success">Get started</button>
+          <p class="card-text" style="text-indent: 5%;">
+            Performing arts are a form of art in which artists use their voices, bodies or inanimate objects to convey artistic expression. It is different from visual arts, which is when artists use paint, canvas or various materials to create physical or static art objects. Performing arts include a range of disciplines which are performed in front of a live audience.
+          </p>
+        </div>
+      </div>
+
+      <div id="performTopic1" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Writing a Play: Script Format, Steps & Tips</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            In literature, a play is text written in the form of dialogue among characters that's intended to be performed on a stage rather than read. Since a play relies almost completely on dialogue, it can be difficult to write. This lesson focuses on the basic guidelines for how to write the script of a play.
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item disabled">
+              <a class="page-link" onClick="showPerformTopic(3)">&laquo;</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showPerformTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPerformTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPerformTopic(3)">3</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPerformTopic(2)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="performTopic2" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">What is Drama? - Terms, Time Periods and Styles</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            Drama. You've heard the word. In fact, you've probably used the word yourself. Maybe you've said, 'Oh, she's just a drama queen,' or, 'I'm sick of all this drama.' In that context, the word 'drama' is something that has been blown out of proportion. Usually, a 'drama queen' is someone who is over the top, an over actor.
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" onClick="showPerformTopic(1)">&laquo;</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPerformTopic(1)">1</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showPerformTopic(2)">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPerformTopic(3)">3</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPerformTopic(3)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="performTopic3" style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Elements of Drama: Characters, Plot, Setting & Symbolism</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text" style="text-indent: 5%;">
+            A drama, or a play, is a piece of writing that is presented almost exclusively through dialogue. Like a short story or novel, it has a setting, characters, plot, and even symbolism. However, the way in which they are presented to the audience is different, because unlike a short story or novel, the play is meant to be performed in front of an audience, not read.
+          </p>
+        </div>
+        <div class="col-md-12" style="margin-left: 30%;">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="page-link" onClick="showPerformTopic(2)">&laquo;</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPerformTopic(1)">1</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" onClick="showPerformTopic(2)">2</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" onClick="showPerformTopic(3)">3</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" onClick="showPerformTopic(3)">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="showFindMe">
+      <img src="images/kimberly.jpg" style="margin-left: 5%; margin-top: 3%; position: absolute; border-radius: 5%; border: solid #9e9e9e 1px;" width="300" height="300" />
+      <div style="position: absolute; margin-left: 35%; max-width: 60%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Information</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text">
+            <p class="card-text"> Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kimberly Peñaflor Sarmiento </p>
+            <p class="card-text"> Location : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #120 Purok Dos, Brgy. Bertese, Quezon City, Nueva Ecija</p>
+            <p class="card-text"> Contact # : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0905 - 621 - 6578</p>
+            <p class="card-text"> E-mail : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sarmientokimberly12@gmail.com</p>
+          </p>
+        </div>
+      </div>
+
+      <div style="position: absolute; margin-left: 5%; max-width: 25%; margin-top: 27.5%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Description</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text">
+            I'm currently studying at Araullo University as a Freshmen IT. My hobbies are watching K-drama, reading novels, listening to music and watching movies with my friends.
+          </p>
+        </div>
+      </div>
+
+      <div style="position: absolute; margin-left: 35%; width: 45%; margin-top: 27.5%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Social Media Accounts</h4></div>
+        <div class="card-body"><br />
+          <p class="card-text">
+            <a target="_blank" href="https://www.facebook.com/aesthetical.kimy"><span title="Facebook" style="margin-right: 5%" class="fa fa-facebook-square fa-3x"></span></a>
+            <a target="_blank" href="https://twitter.com/kimkiyakiya"><span title="Twitter" style="margin-right: 5%" style="margin-right: 15%" class="fa fa-twitter-square fa-3x"></span></a>
+            <a target="_blank" href="https://www.instagram.com/poetickim_"><span title="Instagram" style="margin-right: 25%" style="margin-right: 15%" class="fa fa-instagram fa-3x"></span></a>
+            <span onClick="showEmailMe()" title="Email me" style="margin-right: 5%" style="margin-right: 15%" class="fa fa-envelope-square fa-3x"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="position: absolute; margin-left: 25%; margin-top: 3%;" class="col-md-6" id="showEmailMe">
+      <form onSubmit="congrats()">
+        <fieldset>
+          <legend style="font-family: Arial, Helvetica, sans-serif;">Submit your E-mail</legend>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="sarmientokimberly12@gmail.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleTextarea">Concern</label>
+            <textarea required class="form-control" id="exampleTextarea" rows="3"></textarea>
+          </div>
+          <button style="font-family: Arial, Helvetica, sans-serif;" type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="showAboutUs">
+      <div style="position: absolute; margin-left: 10%; width: 80%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">About us</h4></div>
+        <div class="card-body"><br />
+          <h5>Find us</h5>
+          <p class="card-text">
+            <label style="font-style: 25px;"><span class="fa fa-compass"></span>&nbsp;Brgy Bitas, Maharlika Highway Cabanatuan City</label><br />
+            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F1555731327990239%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink" target="_blank"><label style="font-style: 25px;"><span class="fa fa-comment"></span>&nbsp;m.me/phinmaau</label></a><br />
+            <label style="font-style: 25px;"><span class="fa fa-phone"></span>&nbsp;Call (044) 464 3300</label>
+          </p>
+          <br />
+          <h5>Additional Contact Info</h5>
+          <p class="card-text">
+            <a href="mailto:info@au.phinma.edu.ph?__xts__=" target="_blank"><label style="font-style: 25px;"><span class="fa fa-envelope"></span>&nbsp;info@au.phinma.edu.ph</label></a><br />
+            <a href="https://www.au.phinma.edu.ph/?fbclid=IwAR0ml_iv6243Q-_EiEIx66F_NSDOo8EkYlg6CK7Mr3O5zna4nUYvouvy5Dw" target="_blank"><label style="font-style: 25px;"><span class="fa fa-globe"></span>&nbsp;www.au.phinma.edu.ph</label></a>
+          </p>
+          <img src="images/phinma.png" width="60%" height="auto" align="left" />
+          <img src="images/au.png" width="15%" height="auto" align="right" />
+          <img src="images/contact.png" width="100%" height="auto" align="right" />
+        </div>
+      </div>
+    </div>
+
+    <div id="showHelp">
+      <div style="position: absolute; margin-left: 10%; width: 80%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Help</h4></div>
+        <div class="card-body"><br />
+          <h5>You can check the contents of the website by clicking the buttons on the navigation bar and on the menu (if a menu is available on the left side)</h5>
+          <p class="card-text">
+            <hr />
+            <strong>Home</strong>
+            <ul>
+              <li>Lessons</li>
+              <li>Introduction</li>
+            </ul>
+            <br />
+            <hr />
+            <strong>Exercises</strong><br />
+            <label style="font-size: 20px;">You can answer 10 different questions and get a score of up to 10(perfect score)</label>
+            <br />
+            <hr />
+            <strong>Progress</strong><br />
+            <label style="font-size: 20px;">Prof said there's not enough time to tackle this topic, so we are advancing to a different topic.</label>
+            <br />
+            <hr />
+            <strong>About us</strong><br />
+            <label style="font-size: 20px;">Information about our school is displayed in there</label>
+            <br />
+            <hr />
+            <strong>Find me</strong><br />
+            <label style="font-size: 20px;">Information about me is displayed in there</label>
+            <br />
+            <hr />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="showExercise">
+      <div style="position: absolute; margin-left: 10%; width: 80%; margin-top: 3%;" class="card border-primary mb-3">
+        <div class="card-header"><h4 class="card-title">Exercises</h4></div>
+        <div class="card-body"><br />
+          <h5>Leon Battista Alberti was an architect of what time period?</h5>
+          <p class="card-text">
+            <select class="form-control" id="q1">
+              <option value="a">A) Classical architecture</option>
+              <option value="b">B) The Italian Renaissance</option>
+              <option value="c">C) The Gothic era</option>
+              <option value="d">D) The Victorian era</option>
+            </select>
+          </p>
+          <h5>Renaissance architects like Alberti generally looked to who for aesthetic inspiration?</h5>
+          <p class="card-text">
+            <select class="form-control" id="q2">
+              <option value="a">A) The ancient Greeks and Romans</option>
+              <option value="b">B) The ancient Egyptians</option>
+              <option value="c">C) Paris</option>
+              <option value="d">D) The Far East</option>
+            </select>
+          </p>
+          <h5>What did Alberti use as the model for the facade of Sant'Andrea?</h5>
+          <p class="card-text">
+            <select class="form-control" id="q3">
+              <option value="a">A) A Greek temple</option>
+              <option value="b">B) The Roman Colosseum</option>
+              <option value="c">C) A Roman triumphal arch</option>
+              <option value="d">D) The Greek agora</option>
+            </select>
+          </p>
+          <h5>Alberti wrote On Painting in Latin in 1435. Into what language was it translated the following year?</h5>
+          <p class="card-text">
+            <select class="form-control" id="q4">
+              <option value="a">A) English</option>
+              <option value="b">B) German</option>
+              <option value="c">C) Italian</option>
+              <option value="d">D) French</option>
+            </select>
+          </p>
+          <h5>Into how many books did Alberti divide his treatise On Painting?</h5>
+          <p class="card-text">
+            <select class="form-control" id="q5">
+              <option value="a">A) Two</option>
+              <option value="b">B) Three</option>
+              <option value="c">C) One</option>
+              <option value="d">D) Multiple, and it changed in later translations</option>
+            </select>
+          </p>
+          <h5>In Book 1, Alberti included a lengthy discussion on linear perspective. What is linear perspective?</h5>
+          <p class="card-text">
+            <select class="form-control" id="q6">
+              <option value="a">A) It's painting using only straight lines</option>
+              <option value="b">B) It's a mathematic system that artists use to portray how objects sit in three dimensional space</option>
+              <option value="c">C) It's a method of shading the contours of a drawing using only lines</option>
+              <option value="d">D) It was a way of looking at the world as one straight line of progress from ancient history to the Renaissance</option>
+            </select>
+          </p>
+          <h5>What was Albrecht Dürer's medium of choice?</h5>
+          <p class="card-text">
+            <select class="form-control" id="q7">
+              <option value="a">A) Painting</option>
+              <option value="b">B) Sculpture</option>
+              <option value="c">C) Wood carving</option>
+              <option value="d">D) Woodblock printing</option>
+            </select>
+          </p>
+          <h5>Which Christian sacrament was first enacted during the Last Supper?</h5>
+          <p class="card-text">
+            <select class="form-control" id="q8">
+              <option value="a">A) Baptism</option>
+              <option value="b">B) The Eucharist</option>
+              <option value="c">C) Reconciliation</option>
+              <option value="d">D) Extreme Unction</option>
+            </select>
+          </p>
+          <h5>In what part of the Renaissance was Leon Battista Alberti living and working?</h5>
+          <p class="card-text">
+            <select class="form-control" id="q9">
+              <option value="a">A) The pre-Renaissance</option>
+              <option value="b">B) The late Renaissance</option>
+              <option value="c">C) The early Renaissance</option>
+              <option value="d">D) The post-Renaissance</option>
+            </select>
+          </p>
+          <h5>Which of these was NOT someone from who Alberti drew lots of inspiration?</h5>
+          <p class="card-text">
+            <select id="q10" class="form-control">
+              <option value="a">A) Vitruvius</option>
+              <option value="b">B) Leonardo da Vinci</option>
+              <option value="c">C) Filippo Brunelleschi</option>
+              <option value="d">D) All of these people influenced Alberti</option>
+            </select>
+          </p>
+          <button onClick="checkAnswers()" class="btn btn-outline-success">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
